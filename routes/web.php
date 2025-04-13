@@ -1,11 +1,11 @@
 <?php
 
 use App\Http\Controllers\{
-  UserController,  
+  UserController,
   DashboardController,
   RekapLaporanController,
-    RekapLaporanDetailBerkalaController,
-    RekapLaporanDetailInsidentalController,
+  RekapLaporanDetailBerkalaController,
+  RekapLaporanDetailInsidentalController,
 };
 
 use Illuminate\Support\Facades\Route;
@@ -39,9 +39,8 @@ Route::group([
   Route::post('user/update_password', [UserController::class, 'updatePassword'])->name('user.update_password');
 
   // Rekap Laporan
-  Route::group([    
-  ], function () {
-    Route::get('rekap_laporan', [RekapLaporanController::class, 'index'])->name('rekap_laporan.index');    
+  Route::group([], function () {
+    Route::get('rekap_laporan', [RekapLaporanController::class, 'index'])->name('rekap_laporan.index');
     Route::get('rekap_laporan/data', [RekapLaporanController::class, 'data'])->name('rekap_laporan.data');
 
     Route::get('rekap_laporan/{nama_ljk}', [RekapLaporanController::class, 'show'])->name('rekap_laporan.show');
@@ -53,5 +52,8 @@ Route::group([
 
     Route::get('rekap_detail/laporan_insidental', [RekapLaporanDetailInsidentalController::class, 'index'])->name('rekap_laporan.detail.insidental.index');
     Route::get('rekap_detail/laporan_insidental/data', [RekapLaporanDetailInsidentalController::class, 'data'])->name('rekap_laporan.detail.insidental.data');
+
+    Route::get('rekap_laporan_hampir_terlambat', [RekapLaporanController::class, 'show_hampir_terlambat'])->name('rekap_laporan.show_hampir_terlambat.index');
+    Route::get('rekap_laporan_hampir_terlambat/data', [RekapLaporanController::class, 'show_hampir_terlambat_data'])->name('rekap_laporan.show_hampir_terlambat.data');
   });
 });

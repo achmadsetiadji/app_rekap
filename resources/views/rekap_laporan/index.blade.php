@@ -89,6 +89,12 @@
                         <p>Tidak ada data yang hampir terlambat.</p>
                     @endif
                 </div>
+                <div class="modal-footer">
+                    <!-- Detail Button as Link in Footer -->
+                    <a href="{{ route('rekap_laporan.show_hampir_terlambat.index') }}" class="btn btn-primary">
+                        Detail
+                    </a>
+                </div>
             </div>
         </div>
     </div>
