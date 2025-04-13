@@ -1,0 +1,155 @@
+.btn-full-screen {
+    position: absolute;
+    float:right;
+    margin-right: 3%;
+    left: 80%;
+    top: 15px;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    border-color: white;
+    margin: auto;
+}
+
+.img-peserta {
+    max-width: 120%; 
+    min-width: 280px; 
+    border: 3px solid #611857; 
+    border-radius: 5%;
+    min-height: 120px; 
+    max-height: 250px;
+}
+
+.img-peserta-debat {
+    max-width: 150%; 
+    min-width: 150px; 
+    border: 3px solid #611857; 
+    border-radius: 5%;
+    min-height: 120px; 
+    max-height: 140px;
+}
+
+main {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+ }
+
+.form-makra, .result-makra, .form-count-down {
+    max-width: 700px; 
+    border: 3px solid #718096; 
+    border-radius: 5%;
+    min-height: 50%; 
+    /* max-height: 250px; */
+    border-style: dashed;
+    height: 85%;
+    margin-left: -15%;  
+}
+
+.skor-debat{
+    max-width: 700px; 
+    border: 3px solid #718096; 
+    border-radius: 5%;
+    min-height: 170px; 
+    max-height: 250px;
+    border-style: dashed;
+    height: 85%;
+    /* margin-left: -15%;   */
+}
+
+.camera-makra {
+    max-width: 700px; 
+    /* border: 3px solid #718096;  */
+    /* border-radius: 5%; */
+    min-height: 50%; 
+    /* max-height: 250px; */
+    /* border-style: dashed; */
+    height: 85%;
+    margin-left: -15%;  
+}
+
+.vertical {
+    border-left: 3px solid white;
+    height: 100%;
+    margin-left: 30%;
+}
+
+.disabled-hover {
+    pointer-events: none;
+}
+
+.form-count-down, .camera-makra, .title-start, .btn-finish, .btn-play, .btn-play-debat, .card-mulai-debat, .btn-selesai, 
+.result-makra, .menunggu-hasil-pertandingan, .result_pro_tim_1, .result_pro_tim_2, .result_kontra_tim_1, .result_kontra_tim_2,
+.btn-next, .pro_tim_1, .pro_tim_2, .kontra_tim_1, .kontra_tim_2{
+    display:none;
+}
+
+.dot {
+    height: 60%;
+    width: 80%;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.header-peserta {
+    width: 103.2%; 
+    margin-left: -1.6%; 
+    margin-top: -2%;
+}
+
+.card-pertandingan, .card-mulai-debat{
+    margin-left: 2%; 
+    margin-top: 2%; 
+    /* margin-bottom: 10%; */
+}
+
+.video {
+    max-height: 200px;
+    width: 95%;
+    object-fit: fill;
+    position: absolute;
+    /* transform:scale(1, 1) !important; */
+}
+
+.video2 {
+    height: 50vh;
+    width: 100%;
+    object-fit: fill;
+    position: absolute;
+    margin-left: -50%;
+}
+
+.form-debat-pro, .form-debat-kontra {
+    width: 90%; 
+    border: 2px solid rgba(194, 74, 41, 1);
+    border-radius: 5%;
+    min-height: 50%; 
+    height: 45vh;
+}
+
+.btn-spin {
+    width:15%; 
+    height:7vh; 
+    background-color: #a73c36; 
+    font-size : 15px; 
+    border: 2px solid white; 
+    outline: 5px solid #a73c36;
+}
+
+.no-urut {
+    position: absolute;
+    float:right;
+    margin-right: 3%;
+    left: 80%;
+    top: 10%;
+    border: 2px solid black;
+    background-color: white;
+    color: rgba(36, 54, 70, 1);
+    border-color: white;
+    margin: auto;
+    font-family: "Inter"; 
+    font-weight: 800;
+    font-size: 90%;
+}

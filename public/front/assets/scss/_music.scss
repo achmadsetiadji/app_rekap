@@ -1,0 +1,246 @@
+.song-add {
+    display: inline-block;
+    position: relative;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: $white;
+}
+
+.song-added {
+    display: inline-block;
+    position: relative;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: $primary;
+}
+
+.music-bg {
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 1;
+    &::before {
+        content: '';
+        display: block;
+        height: 100dvh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -webkit-backdrop-filter: blur(1rem);
+        backdrop-filter: blur(1rem);
+        background: rgba($dark, 0.25);
+        background: linear-gradient(180deg, rgba($white, 0.25) 0%, $dark 70%);
+        z-index: 11;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.music-back {
+    background-color: rgba($dark, 0.15);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    border-radius: 50%;
+    font-size: 0.875rem;
+    color: $white;
+    position: relative;
+    z-index: 9;
+    &:hover {
+        color: $white;
+    }
+    &:focus {
+        color: $white;
+        background-color: rgba($dark, 0.25);
+    }
+}
+
+.music-content {
+    z-index: 9;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    .music-cover {
+        border-radius: 10px;
+        width: 185px;
+        height: 185px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            box-shadow: 0 .5rem 1rem rgba($dark, 0.15);
+        }
+    }
+    .music-name {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .music-info {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            display: inline-block;
+            font-size: 0.75rem;
+            color: $white;
+            opacity: 0.7;
+            margin-right: 0.25rem;
+            &::after {
+                content: '•';
+                padding-left: 0.25rem;
+            }
+            a {
+                color: $white;
+            }
+            &:last-child {
+                margin-right: 0;
+                &::after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
+.music-action {
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    background-color: $dark;
+    bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.music-action-top {
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.music-timeline {
+    display: block;
+    opacity: 0.7;
+    margin-bottom: 5px;
+    &::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+    #musicTimeCurrent {
+        float: left;
+    }
+    #musicTimeDuration {
+        float: right;
+    }
+}
+
+.music-action-bottom {
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.music-act-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        color: $white;
+    }
+    &:focus {
+        color: $white;
+        background-color: rgba($white, 0.15);
+    }
+}
+
+.music-control-link {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 1.125rem;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        color: $white;
+    }
+    &:focus {
+        color: $white;
+        background-color: rgba($white, 0.15);
+    }
+}
+
+.music-control-play {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    background-color: $primary;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        color: $white;
+    }
+    &:focus {
+        color: $white;
+        background-color: $primary;
+    }
+}
+
+.slider{
+    &.music-progress {
+        background-color: darken($white, 50%);
+        border-radius: 2px;
+        cursor: pointer;
+        height: 2px;
+        position: relative;
+        width: 100%;
+    
+        .progress {
+            background-color: $primary;
+            height: 100%;
+            pointer-events: none;
+            position: absolute;
+            width: 0;
+        }
+    }
+    
+}

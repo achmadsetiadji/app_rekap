@@ -1,0 +1,5 @@
+
+.icon-games:before { content: '\e800'; } /* '' */
+.icon-category:before { content: '\e802'; } /* '' */
+.icon-profile:before { content: '\e804'; } /* '' */
+.icon-home:before { content: '\e805'; } /* '' */

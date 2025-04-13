@@ -1,0 +1,115 @@
+INSERT INTO rekap_laporan_details (periodasi, kategori, nama_laporan, deadline_pengiriman, ketentuan_pojk, ketentuan_pasal, sanksi) VALUES
+	('Bulanan', 'Berkala', 'Laporan Bulanan', 'Paling lambat pada tanggal 10 bulan berikutnya setelah bulan bersangkutan.', 'POJK Nomor 23 Tahun 2024', 'Pasal 8 Ayat (1)', 'sanksi administratif berupa 
+denda sebesar: 
+a. Rp100.000,00 (seratus ribu rupiah) per hari kerja 
+dan paling banyak Rp3.000.000,00 (tiga juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah 
+yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau 
+b. Rp200.000,00 (dua ratus ribu rupiah) per hari kerja dan paling banyak Rp6.000.000,00 (enam juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah 
+yang modal inti paling sedikit Rp50.000.000.000,00 (lima puluh miliar rupiah).'),
+	('Bulanan', '', '', 'Paling lambat pada tanggal 15 bulan berikutnya setelah bulan Laporan Berkala bulanan yang bersangkutan.', 'POJK Nomor 23 Tahun 2024', 'Pasal 8 Ayat (2)', 'sanksi administratif berupa denda sebesar: 
+(a) Rp100.000,00 (seratus ribu rupiah) per hari kerja bagi BPR dan BPR Syariah yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau 
+(b) Rp200.000,00 (dua ratus ribu rupiah) per hari kerja bagi BPR dan BPR Syariah yang memiliki modal inti paling sedikit Rp50.000.000.000,00 (lima puluh miliar rupiah).'),
+	('Bulanan', 'Kelembagaan', 'Laporan Pelaksanaan Penutupan Kantor Kas', 'Pada periode laporan tanggal pelaksanaan penutupan Kantor Kas', 'POJK Nomor 7 Tahun 2024', 'Pasal 86 Ayat (2)', 'sanksi administratif berupa teguran tertulis'),
+	('Bulanan', 'Kelembagaan', 'Laporan Pelaksanaan penutupan Kantor Wilayah, Kantor Cabang, dan/atau Sentra Keuangan Khusus', 'Pada periode laporan tanggal pelaksanaan penutupan kantor', 'POJK Nomor 7 Tahun 2024', 'Pasal 85 Ayat (3)', 'sanksi administratif berupa teguran tertulis'),
+	('Bulanan', 'Kelembagaan', 'Laporan pelaksanaan perubahan status menjadi Kantor Kas', 'Pada periode laporan tanggal pelaksanaan pembukaan Kantor Kas', 'POJK Nomor 7 Tahun 2024', 'Pasal 83 Ayat (4)', 'sanksi administratif berupa teguran tertulis'),
+	('Bulanan', 'Kelembagaan', 'Laporan pelaksanaan perubahan status menjadi Kantor Cabang atau Sentra Keuangan Khusus', 'Pada periode laporan tanggal pelaksanaan pembukaan Kantor Cabang atau Sentra Keuangan Khusus,', 'POJK Nomor 7 Tahun 2024', 'Pasal 81 Ayat (4)', 'sanksi administratif berupa teguran tertulis'),
+	('Bulanan', 'Kelembagaan', 'Laporan pemindahan alamat Sentra Keuangan Khusus dan/atau Kantor Kas', 'Pada periode laporan tanggal pelaksanaan pemindahan 
+alamat Sentra Keuangan Khusus dan/atau Kantor Kas', 'POJK Nomor 7 Tahun 2024', 'Pasal 77 Ayat (2)', 'sanksi administratif berupa teguran tertulis'),
+	('Bulanan', 'Kelembagaan', 'Laporan pemindahan alamat Kantor Pusat, Kantor Wilayah, dan/atau Kantor Cabang', 'Pada periode laporan tanggal pelaksanaan pemindahan alamat Kantor Pusat, Kantor Wilayah, dan/atau Kantor Cabang', 'POJK Nomor 7 Tahun 2024', 'Pasal 76 Ayat (3)', 'sanksi administratif berupa teguran tertulis'),
+	('Bulanan', 'Kelembagaan', 'Laporan pelaksanaan pembukaan Kantor Kas', 'pada periode laporan 
+tanggal pelaksanaan pembukaan Kantor Kas', 'POJK Nomor 7 Tahun 2024', 'Pasal 73 Ayat (3)', 'sanksi administratif berupa teguran tertulis'),
+	('Bulanan', 'Kelembagaan', 'Laporan pelaksanaan pembukaan Sentra Keuangan Khusus', 'pada periode laporan tanggal pelaksanaan pembukaan Sentra Keuangan Khusus', 'POJK Nomor 7 Tahun 2024', 'Pasal 71 Ayat (3)', 'sanksi administratif 
+berupa teguran tertulis'),
+	('Bulanan', 'Kelembagaan', 'Laporan pelaksanaan pembukaan Kantor Cabang', 'Pada periode laporan tanggal pelaksanaan pembukaan Kantor Cabang', 'POJK Nomor 7 Tahun 2024', 'Pasal 67 Ayat (3)', 'sanksi administratif sesuai dengan Peraturan OJK mengenai pelaporan BPR dan BPR Syariah melalui sistem pelaporan OJK'),
+	('Bulanan', 'Kelembagaan', 'Laporan pelaksanaan pembukaan Kantor Wilayah', 'pada periode laporan tanggal pelaksanaan pembukaan Kantor Wilayah', 'POJK Nomor 7 Tahun 2024', 'Pasal 64 Ayat (3)', 'Pasal 83 ayat (5), dan/atau Pasal 85 ayat (4), dikenai sanksi administratif berupa denda sebesar Rp100.000,00 (seratus ribu rupiah) per hari kerja dan paling banyak Rp5.000.000,00 (lima juta rupiah)'),
+	('Bulanan', 'Kelembagaan', 'Laporan penggunaan, penambahan, dan/atau pemindahan lokasi Terminal Perbankan Elektronik yang dikelola BPR atau BPR Syariah', 'Pada periode laporan tanggal pelaksanaan penggunaan, penambahan, dan/atau pemindahan', 'POJK Nomor 7 Tahun 2024', 'Pasal 58 Ayat (3)', 'sanksi administratif sesuai dengan Peraturan OJK mengenai pelaporan BPR dan BPR Syariah melalui sistem pelaporan OJK'),
+	('Bulanan', 'Kelembagaan', 'Laporan pengangkatan, penggantian, dan/atau pemberhentian Pejabat Eksekutif', 'Pada periode pelaporan tanggal pengangkatan, penggantian, dan/atau pemberhentian Pejabat Eksekutif.', 'POJK Nomor 7 Tahun 2024', 'Pasal 54 Ayat (1)', 'sanksi administratif sesuai dengan Peraturan OJK mengenai pelaporan BPR dan BPR Syariah melalui sistem pelaporan OJK'),
+	('Bulanan', 'Kelembagaan', 'Laporan pengangkatan kembali anggota Direksi dan anggota Dewan Komisaris ', 'Pada periode laporan tanggal yang ditetapkan dalam RUPS disertai dengan risalah RUPS.', 'POJK Nomor 7 Tahun 2024', 'Pasal 53 Ayat (2)', 'sanksi administratif sesuai dengan Peraturan OJK mengenai pelaporan BPR dan BPR Syariah melalui sistem pelaporan OJK'),
+	('Bulanan', 'Kelembagaan', 'Laporan pemberhentian dan/atau pengunduran diri anggota Direksi dan anggota Dewan Komisaris', 'pada periode pelaporan tanggal pemberhentian dan/atau pengunduran diri yang ditetapkan dalam RUPS atau berakhirnya jangka waktu yang diatur dalam anggaran dasar bagi RUPS yang tidak dapat diselenggarakan', 'POJK Nomor 7 Tahun 2024', 'Pasal 52 Ayat (1)', 'sanksi administratif sesuai dengan Peraturan OJK mengenai pelaporan BPR dan BPR Syariah melalui sistem pelaporan OJK'),
+	('Bulanan', 'Kelembagaan', 'Laporan Anggota Direksi dan Anggota Dewan Komisaris yang Meninggal Dunia', 'Pada periode laporan tanggal yang bersangkutan meninggal dunia', 'POJK Nomor 7 Tahun 2024', 'Pasal 52 Ayat (2)', 'sanksi administratif sesuai dengan Peraturan OJK mengenai pelaporan BPR dan BPR Syariah melalui sistem pelaporan OJK'),
+	('Bulanan', 'Kelembagaan', 'Laporan perubahan jabatan anggota Direksi dan/atau anggota Dewan Komisaris', 'Pada periode pelaporan tanggal perubahan jabatan anggota Direksi dan/atau anggota Dewan Komisaris', 'POJK Nomor 7 Tahun 2024', 'Pasal 51 Ayat (1)', 'sanksi administratif sesuai dengan Peraturan OJK mengenai pelaporan BPR dan BPR Syariah melalui sistem pelaporan OJK'),
+	('Bulanan', 'Kelembagaan', 'Laporan pengangkatan anggota Direksi dan/atau anggota Dewan Komisaris  telah menyelenggarakan 
+RUPS sebelum memperoleh persetujuan OJK', 'Pada periode pelaporan tanggal penetapan hasil penilaian kemampuan dan kepatutan', 'POJK Nomor 7 Tahun 2024', 'Pasal 50 Ayat (3)', 'sanksi administratif sesuai dengan Peraturan OJK mengenai pelaporan BPR dan BPR Syariah melalui sistem pelaporan OJK'),
+	('Bulanan', 'Kelembagaan', 'Laporan pengangkatan anggota Direksi dan anggota Dewan Komisaris dalam hal RUPS diselenggarakan setelah 
+tanggal persetujuan OJK', 'Pada periode pelaporan tanggal pengangkatan anggota Direksi dan anggota Dewan Komisaris, yang ditetapkan dalam RUPS.', 'POJK Nomor 7 Tahun 2024', 'Pasal 49 Ayat (4)', 'sanksi administratif sesuai dengan Peraturan OJK mengenai pelaporan BPR dan BPR Syariah melalui sistem pelaporan OJK'),
+	('Bulanan', 'BMPK Kredit BPR', 'Laporan BMPK atau BMPD', 'Paling lambat pada tanggal 10 bulan berikutnya setelah bulan bersangkutan.', 'POJK Nomor 23 Tahun 2022', 'Pasal 30 Ayat (1)', 'sanksi administratif sesuai dengan Peraturan Otoritas Jasa Keuangan mengenai pelaporan bank perkreditan rakyat dan bank pembiayaan rakyat syariah melalui sistem pelaporan Otoritas Jasa Keuangan.'),
+	('Bulanan', 'Publikasi', 'Laporan Keuangan Publikasi BPR', 'Paling lambat pada tanggal 10 bulan berikutnya setelah akhir bulan Laporan Berkala triwulanan yang bersangkutan', 'POJK Nomor 23 Tahun 2024', 'Pasal 9 Ayat (a)', 'sanksi administratif berupa denda sebesar: 
+a. Rp100.000,00 (seratus ribu rupiah) per hari kerja dan paling banyak Rp3.000.000,00 (tiga juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau 
+b. Rp200.000,00 (dua ratus ribu rupiah) per hari kerja dan paling banyak Rp6.000.000,00 (enam juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah 
+yang modal inti paling sedikit Rp50.000.000.000,00 (lima puluh miliar rupiah)'),
+	('Bulanan', 'Perbedaan Kualitas Aset Produktif', 'Laporan perbedaan kualitas aset produktif', 'Paling lambat pada tanggal 10 bulan berikutnya setelah bulan bersangkutan (untuk posisi akhir bulan Maret, bulan Juni, bulan September, dan bulan Desember)', 'POJK Nomor 1 Tahun 2024', 'Pasal 6 ayat (4)', 'sanksi administratif berupa teguran tertulis'),
+	('Bulanan', 'TPPU,TPPT, dan/atau PPSPM', 'Laporan Dokumen penilaian risiko TPPU, TPPT, dan/atau PPSPM ', 'Setiap tahun paling lambat akhir bulan Juni', 'POJK Nomor 8 Tahun 2023', 'Pasal 74 ayat (1) huruf a dan huruf b', ''),
+	('Bulanan', 'Bukti Publikasi Laporan Tahunan', 'Laporan Bukti Pengumuman Laporan Tahunani', 'Paling lambat pada tanggal 10 bulan berikutnya setelah pengumuman Laporan Tahunan pada periode terdekat, sesuai batas waktu pengumuman LaporanTahunan', 'POJK Nomor 23 Tahun 2024', 'Pasal 32 ayat (6)', 'sanksi administratif berupa denda sebesar:  
+(a) Rp100.000,00 (seratus ribu rupiah) per hari kerja bagi BPR dan BPR Syariah yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau (b) Rp200.000,00 (dua ratus ribu rupiah) per hari kerja bagi BPR dan BPR Syariah yang memiliki modal inti paling sedikit Rp50.000.000.000,00 (lima puluh miliar rupiah), dan/atau
+(a) Rp20.000,00 (dua puluh ribu rupiah) per kesalahan data dan/atau informasi dan paling banyak Rp2.000.000,00 (dua juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau (b) Rp20.000,00 (dua puluh ribu rupiah) per kesalahan data dan/atau informasi dan paling banyak Rp5.000.000,00 (lima juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah yang memiliki modal inti paling sedikit Rp50.000.000.000,00 (lima puluh miliar rupiah).'),
+	('Bulanan', 'Bukti Publikasi Laporan Keuangan', 'Laporan Bukti Pengumuman Laporan Keuangan Publikasi', 'Paling lambat pada tanggal 10 bulan berikutnya setelah pengumuman Laporan Keuangan Publikasi pada periode terdekat, sesuai batas waktu pengumuman Laporan Keuangan Publikasi', 'POJK Nomor 23 Tahun 2024', 'Pasal 38 ayat (2)', 'sanksi administratif berupa denda sebesar:  
+(a) Rp100.000,00 (seratus ribu rupiah) per hari kerja bagi BPR dan BPR Syariah yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau (b) Rp200.000,00 (dua ratus ribu rupiah) per hari kerja bagi BPR dan BPR Syariah yang memiliki modal inti paling sedikit Rp50.000.000.000,00 (lima puluh miliar rupiah), dan/atau
+(a) Rp20.000,00 (dua puluh ribu rupiah) per kesalahan data dan/atau informasi dan paling banyak Rp2.000.000,00 (dua juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau (b) Rp20.000,00 (dua puluh ribu rupiah) per kesalahan data dan/atau informasi dan paling banyak Rp5.000.000,00 (lima juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah yang memiliki modal inti paling sedikit Rp50.000.000.000,00 (lima puluh miliar rupiah).'),
+	('Triwulan', 'Keuangan Publikasi', 'Laporan Keuangan Publikasi', 'paling lambat pada tanggal 10 bulan berikutnya setelah akhir bulan Laporan Berkala triwulanan yang bersangkutan', 'POJK Nomor 23 Tahun 2024', 'Pasal 9 huruf a', 'Periode I'),
+	('Triwulan', 'Penyelenggaraan Laku Pandai', 'Laporan Perkembangan Penyelenggaraan Layanan Keuangan Tanpa Kantor Dalam Rangka Keuangan Inklusif  (Laku Pandai)', 'Paling lambat setiap tanggal 15 (lima belas) bulan berikutnya setelah akhir bulan laporan.', 'POJK Nomor 1 /POJK.03/2022', 'Pasal 35 ayat (1)', 'sanksi administratif berupa denda sebesar: a. b. Rp100.000,00 (seratus ribu rupiah) per hari kerja keterlambatan dan paling banyak Rp3.000.0000,00 (tiga juta rupiah) bagi BPR dan BPRS yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau Rp250.000,00 (dua ratus lima puluh ribu rupiah) per hari kerja keterlambatan dan paling banyak Rp7.500.000,00 (tujuh juta lima ratus ribu rupiah) bagi BPR dan BPRS yang memiliki modal inti paling 
+sedikit Rp50.000.000.000,00 (lima puluh miliar 
+rupiah)'),
+	('Semesteran', 'Tingkat Kesehatan', 'Laporan Penilaian Tingkat Kesehatan', 'Setiap  semester untuk posisi akhir bulan Juni  disampaikan paling lambat pada 
+tanggal 31 Juli dan Desember  disampaikan paling lambat pada tanggal 31 Januari', 'POJK Nomor 3/POJK.03/2022', 'Pasal 3 ayat (5)', '1. Sanksi administratif berupa teguran tertulis
+2. Sanksi administratif berupa: (1) larangan melakukan ekspansi kegiatan usaha 
+dan/atau jaringan kantor; dan/atau (2) penghentian sementara operasional BPR atau BPRS.
+3. Sanksi administratif berupa larangan sebagai pihak utama sesuai dengan Peraturan Otoritas Jasa Keuangan mengenai penilaian kembali bagi pihak utama lembaga jasa keuangan '),
+	('Semesteran', 'Profil Risiko', 'Laporan Profil RIsiko', 'Paling lambat tanggal 31 Juli untuk laporan semester pertama dan tanggal 31 Januari tahun berikutnya untuk laporan semester kedua', 'POJK Nomor 13/POJK.03/2015', 'Pasal 22 ayat (3)', 'sanksi administratif berupa teguran tertulis dan sanksi kewajiban membayar berupa denda sebesar Rp10.000.000,00 (sepuluh juta rupiah). Selain itu  juga dikenakan sanksi administratif berupa: 
+a. Penurunan tingkat kesehatan BPR; dan/atau 
+b. Pencantuman pengurus dalam daftar pihak-pihak yang memperoleh predikat tidak lulus.'),
+	('Semesteran', 'Pelaksanaan Tata Kelola', 'Laporan Pelaksanaan Tata Kelola', 'Disampaikan secara semesteran paling lambat tanggal 31 Januari untuk laporan posisi akhir bulan Desember dan tanggal 31 Juli untuk laporan posisi akhir bulan Juni', 'POJK Nomor 9 Tahun 2024', 'Pasal 103 ayat (2)', '1. sanksi administratif berupa teguran tertulis
+2. sanksi administratif berupa: (a) penurunan tingkat kesehatan;  (b) penghentian sementara Sebagian kegiatan operasional BPR dan BPR Syariah; dan/atau (c) larangan melakukan ekspansi kegiatan usaha. 
+3. pihak utama BPR dan BPR Syariah dapat dikenai  sanksi administratif berupa larangan sebagai pihak utama sesuai dengan Peraturan Otoritas Jasa Keuangan mengenai penilaian kembali bagi pihak utama lembaga jasa keuangan
+4. BPR, BPR Syariah dan/atau pemegang saham pengendali dapat dikenai sanksi administratif berupa denda paling sedikit Rp10.000.000,00 (sepuluh juta rupiah) dan paling banyak Rp100.000.000,00 (seratus juta rupiah) untuk setiap pelanggaran yang dilakukan
+5. sanksi administratif berupa denda sebesar Rp100.000,00 (seratus ribu rupiah) per hari kerja dan paling banyak Rp5.000.000,00 (lima juta rupiah).'),
+	('Semesteran', 'Pelaksanaan Tata Kelola', 'Laporan pelaksanaan tugas anggota Direksi yang membawahkan fungsi kepatuhan', 'Disampaikan secara semesteran paling lambat tanggal 31 Januari untuk laporan posisi akhir bulan Desember dan tanggal 31 Juli untuk laporan posisi akhir bulan Juni', 'POJK Nomor 9 Tahun 2024', 'Pasal 103 ayat (2)', '1. sanksi administratif berupa teguran tertulis
+2. sanksi administratif berupa: (a) penurunan tingkat kesehatan;  (b) penghentian sementara Sebagian kegiatan operasional BPR dan BPR Syariah; dan/atau (c) larangan melakukan ekspansi kegiatan usaha. 
+3. pihak utama BPR dan BPR Syariah dapat dikenai  sanksi administratif berupa larangan sebagai pihak utama sesuai dengan Peraturan Otoritas Jasa Keuangan mengenai penilaian kembali bagi pihak utama lembaga jasa keuangan
+4. BPR, BPR Syariah dan/atau pemegang saham pengendali dapat dikenai sanksi administratif berupa denda paling sedikit Rp10.000.000,00 (sepuluh juta rupiah) dan paling banyak Rp100.000.000,00 (seratus juta rupiah) untuk setiap pelanggaran yang dilakukan
+5. sanksi administratif berupa denda sebesar Rp100.000,00 (seratus ribu rupiah) per hari kerja dan paling banyak Rp5.000.000,00 (lima juta rupiah).'),
+	('Semesteran', 'Pelaksanaan Tata Kelola', 'Laporan pelaksanaan dan pokok hasil audit intern', 'Disampaikan secara semesteran paling lambat tanggal 31 Januari untuk laporan posisi akhir bulan Desember dan tanggal 31 Juli untuk laporan posisi akhir bulan Juni', 'POJK Nomor 9 Tahun 2024', 'Pasal 103 ayat (2)', '1. sanksi administratif berupa teguran tertulis
+2. sanksi administratif berupa: (a) penurunan tingkat kesehatan;  (b) penghentian sementara Sebagian kegiatan operasional BPR dan BPR Syariah; dan/atau (c) larangan melakukan ekspansi kegiatan usaha. 
+3. pihak utama BPR dan BPR Syariah dapat dikenai  sanksi administratif berupa larangan sebagai pihak utama sesuai dengan Peraturan Otoritas Jasa Keuangan mengenai penilaian kembali bagi pihak utama lembaga jasa keuangan
+4. BPR, BPR Syariah dan/atau pemegang saham pengendali dapat dikenai sanksi administratif berupa denda paling sedikit Rp10.000.000,00 (sepuluh juta rupiah) dan paling banyak Rp100.000.000,00 (seratus juta rupiah) untuk setiap pelanggaran yang dilakukan
+5. sanksi administratif berupa denda sebesar Rp100.000,00 (seratus ribu rupiah) per hari kerja dan paling banyak Rp5.000.000,00 (lima juta rupiah).'),
+	('Semesteran', 'Pelaksanaan dan Pengawasan Rencana Bisnis', 'Laporan Pelaksanaan dan Pengawasan Rencana Bisnis', 'Paling lambat 1 (satu) bulan setelah semester dimaksud berakhir', 'POJK Nomor 15/POJK.03/2021', 'Pasal 22 ayat (2)', 'sanksi administratif berupa denda sebesar: 
+a.Rp100.000,00 (seratus ribu rupiah) per hari 
+keterlambatan dan paling banyak sebesar 
+Rp5.000.000,00 (lima juta rupiah) bagi BPR atau 
+BPRS yang memiliki modal inti kurang dari 
+Rp50.000.000.000,00 (lima puluh miliar rupiah); 
+atau 
+b. Rp300.000,00 (tiga ratus ribu rupiah) per hari 
+keterlambatan dan paling banyak sebesar 
+Rp15.000.000,00 (lima belas juta rupiah) bagi BPR 
+atau BPRS yang memiliki modal inti paling sedikit 
+Rp50.000.000.000,00 (lima puluh miliar rupiah). '),
+	('Semesteran', '', 'Laporan Realisasi Pengkinian Data', 'Setiap tahun paling lama akhir bulan Januari setelah periode pengkinian data berakhir;', 'POJK Nomor 8 Tahun 2023', 'Pasal 74 ayat (1) huruf e', 'Periode I'),
+	('Semesteran', 'Penerapan Strategi Anti Fraud', 'Laporan Penerapan Strategi Anti Fraud', 'Setiap semester untuk posisi akhir bulan Juni dan akhir bulan Desember, paling lambat pada tanggal 31 bulan berikutnya setelah akhir bulan laporan', 'POJK Nomor 12 Tahun 2024', 'Pasal 14 ayat (1)', 'sanksi administratif berupa teguran tertulis atau peringatan tertulis oleh Otoritas Jasa Keuangan'),
+	('Tahunan', 'Rencana Bisnis', 'Laporan Rencana Bisnis', 'Paling lambat pada tanggal 15 Desember sebelum tahun Rencana Bisnis dimulai', 'POJK Nomor 15/POJK.03/2021', 'Pasal 19 ayat (1)', 'sanksi administratif berupa denda sebesar: 
+a.Rp100.000,00 (seratus ribu rupiah) per hari 
+keterlambatan dan paling banyak sebesar 
+Rp5.000.000,00 (lima juta rupiah) bagi BPR atau 
+BPRS yang memiliki modal inti kurang dari 
+Rp50.000.000.000,00 (lima puluh miliar rupiah); 
+atau 
+b. Rp300.000,00 (tiga ratus ribu rupiah) per hari 
+keterlambatan dan paling banyak sebesar 
+Rp15.000.000,00 (lima belas juta rupiah) bagi BPR 
+atau BPRS yang memiliki modal inti paling sedikit 
+Rp50.000.000.000,00 (lima puluh miliar rupiah). '),
+	('Tahunan', 'Pengkinian Data', 'Laporan Rencana Pengkinian Data', 'Setiap tahun paling lama akhir bulan Desember sebelum periode pengkinian data', 'POJK Nomor 8 Tahun 2023', 'Pasal 74 ayat (1) huruf d', ''),
+	('Tahunan', '', '', 'Paling lambat pada tanggal 15 Desember sebelum tahun rencana bisnis dimulai', 'POJK Nomor 23 Tahun 2024', 'Pasal 11 huruf a dan 50', 'sanksi administratif berupa denda sebesar: 
+a. Rp100.000,00 (seratus ribu rupiah) per hari kerja dan paling banyak Rp3.000.000,00 (tiga juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau 
+b. Rp200.000,00 (dua ratus ribu rupiah) per hari kerja dan paling banyak Rp6.000.000,00 (enam juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah yang modal inti paling sedikit Rp50.000.000.000,00 (lima puluh miliar rupiah)'),
+	('Tahunan', 'Keuangan Berkelanjutan', 'Laporan Rencana Aksi Keuangan Berkelanjutan', 'Pada waktu yang sama dengan penyampaian rencana bisnis bagi LJK yang diwajibkan, dan paling lambat tanggal 31 Januari bagi LJK yang tidak diwajibkan untuk menyampaikan rencana bisnis ', 'POJK Nomor 51/POJK.03/2017', 'Pasal 4 ayat (2)', 'sanksi administratif berupa teguran atau peringatan tertulis.'),
+	('Tahunan', 'Laporan Tahunan', 'Laporan Tahunan', 'Paling lambat pada tanggal 30 April tahun berikutnya untuk posisi akhir bulan Desember', 'POJK Nomor 23 Tahun 2024', 'Pasal 11 huruf b', 'sanksi administratif berupa denda sebesar: 
+a. Rp100.000,00 (seratus ribu rupiah) per hari kerja dan paling banyak Rp3.000.000,00 (tiga juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah yang memiliki modal inti kurang dari Rp50.000.000.000,00 (lima puluh miliar rupiah); atau 
+b. Rp200.000,00 (dua ratus ribu rupiah) per hari kerja dan paling banyak Rp6.000.000,00 (enam juta rupiah) per jenis Laporan bagi BPR dan BPR Syariah yang modal inti paling sedikit Rp50.000.000.000,00 (lima puluh miliar rupiah)'),
+	('Tahunan', '', 'Laporan transparansi pelaksanaan tata kelola', 'Paling lambat pada tanggal 30 April tahun berikutnya untuk posisi akhir bulan Desember', 'POJK Nomor 9 Tahun 2024', 'Pasal 102 ayat (3)', ''),
+	('Tahunan', '', 'Laporan Keberlanjutan', 'Setiap tahun paling lambat sesuai dengan
+batas waktu penyampaian laporan tahunan', 'POJK Nomor 51/POJK.03/2017', 'Pasal 10 ayat (3)', 'sanksi administratif berupa teguran atau peringatan tertulis'),
+	('Tahunan', '', 'Laporan Penunjukan AP dan KAP', 'Paling lama 10 (sepuluh) hari kerja setelah
+perjanjian kerja antara Pihak dan KAP
+ditandatangani', 'POJK Nomor 9 Tahun 2023', 'Pasal 12 ayat (1) huruf a', 'sanksi administratif berupa denda masing-masing sebesar Rp100.000,00 (seratus ribu rupiah) per hari kerja dan paling banyak Rp5.000.000,00 (lima juta rupiah) per laporan'),
+	('Tahunan', '', 'Laporan Realisasi Penggunaan Jasa AP dan KAP', 'Paling lama 6 (enam) bulan setelah tahun buku berakhir', 'POJK Nomor 9 Tahun 2023', 'Pasal 12 ayat (1) huruf b', 'sanksi administratif berupa denda masing-masing sebesar Rp100.000,00 (seratus ribu rupiah) per hari kerja dan paling banyak Rp5.000.000,00 (lima juta rupiah) per laporan');

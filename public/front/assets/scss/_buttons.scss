@@ -1,0 +1,126 @@
+.btn {
+    font-size: 12px;
+    font-weight: $semibold;
+    border-radius: 8px;
+    border: none;
+    transition: all .2s ease-in-out;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    &-primary {
+        background: $primary;
+        color: $white;
+        &:hover,&:focus,&:active {
+            background: darken($primary, 10) !important;
+            border: none;
+        }
+    }
+    &-yellow {
+        background: $yellow;
+        color: $dark;
+        &:hover,&:focus,&:active {
+            background: darken($yellow, 10) !important;
+            border: none;
+        }
+    }
+    &-secondary {
+        background: $bg-soft;
+        color: $dark;
+        &:hover,&:focus,&:active {
+            background: darken($bg-soft, 10) !important;
+            border: none;
+        }
+    }
+    &-logout {
+        background: $btn-logout;
+        color: $primary;
+        &:focus,&:active {
+            background: $primary;
+            color: $white;
+        }
+    }
+    &-purple {
+        background: $primary-purple;
+        color: $white;
+        &:hover {
+            background: darken($primary-purple, 10);
+        }
+    }
+    &-white {
+        background: $white;
+        color: $dark;
+        &:hover {
+            background: darken($white, 10);
+            color: $dark;
+        }
+    }
+    &-outline-white {
+        background: $bg-form;
+        border: 1px solid $white;
+        color: $white;
+        &:hover {
+            background: darken($bg-form, 10);
+        }
+    }
+    .disabled {
+        opacity: .7;
+    }
+}
+
+.button-genre {
+    background-color: $white;
+    line-height: normal;
+    color: $muted !important;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid $muted;
+
+    &.active {
+        background-color: $primary !important;
+        border: 1px solid $primary;
+        color: $white !important;
+        border-radius: 8px !important;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    i {
+        &.purple {
+            color: #FF2ED9;
+        }
+        &.blue {
+            color: #5ce4ff;
+        }
+        &.green {
+            color: #39FFC9;
+        }
+        &.yellow {
+            color: #FFD400;
+        }
+    }
+}
+
+
+.credit {
+    .btn-check:checked+label {
+        background: $primary;
+        color: $white;
+    }
+
+    .btn-check:disabled+.btn,
+    .btn-check[disabled]+.btn {
+        background: #EBEBEB;
+    }
+}
+
+.floating-bottom {
+    position: fixed;
+    background: $bg-soft;
+    bottom: 0;
+    width: 100%;
+    padding: 14px 0;
+}
