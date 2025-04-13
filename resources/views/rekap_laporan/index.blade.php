@@ -88,10 +88,7 @@
                     @else
                         <p>Tidak ada data yang hampir terlambat.</p>
                     @endif
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                </div>
+                </div>                
             </div>
         </div>
     </div>
