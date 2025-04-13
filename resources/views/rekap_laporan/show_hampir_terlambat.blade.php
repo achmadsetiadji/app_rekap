@@ -12,6 +12,7 @@
         <x-table class="table expandable-table table-responsive">
             <x-slot name="thead">
                 <th width="5%">#</th>
+                <th>Nama BPR</th>
                 <th>Jenis Laporan</th>
                 <th>Status Submit Laporan</th>
                 <th>Tanggal Upload</th>
@@ -65,6 +66,9 @@
                     data: 'DT_RowIndex',
                     searchable: false,
                     orderable: false
+                },
+                {
+                    data: 'nama_ljk'
                 },
                 {
                     data: 'jenis_laporan'
