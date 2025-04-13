@@ -88,17 +88,35 @@ class RekapLaporanController extends Controller
     return datatables()->of($data)
       ->addIndexColumn()
       ->addColumn('status_submit_laporan', function ($data) {
+        // Initialize status badges array
+        $badges = [];
+
+        // Get the current status from the database
         $status = $data->status_submit_laporan;
 
+        // Add the initial badge based on the status
         $badgeClass = match ($status) {
           'Terlambat'     => 'danger',
-          'Tidak Lapor'   => 'warning', // Bootstrap uses "warning" instead of "orange"
+          'Tidak Lapor'   => 'warning', // Bootstrap uses "warning" for orange
           'Tepat Waktu'   => 'success',
           'Terkirim'      => 'info',
           default         => 'secondary', // fallback
         };
 
-        return '<span class="text-white font-weight-bold badge badge-' . $badgeClass . '">' . $status . '</span>';
+        // Add the initial badge to the badges array
+        $badges[] = '<span class="text-white font-weight-bold badge badge-' . $badgeClass . '">' . $status . '</span>';
+
+        // Check if the report is "Hampir Terlambat"
+        $currentDate = now(); // Current date and time
+        $dueDate = \Carbon\Carbon::parse($data->tgl_batas_akhir); // Due date from the database
+
+        if ($status === 'Tidak Lapor' && $currentDate->diffInDays($dueDate, false) <= 5 && $currentDate->lessThan($dueDate)) {
+          // Add the "Hampir Terlambat" badge
+          $badges[] = '<span class="text-white font-weight-bold badge" style="background-color: orange;">Hampir Terlambat</span>';
+        }
+
+        // Combine all badges into a single string
+        return implode(' ', $badges);
       })
       ->addColumn('action', function ($data) {
         return '
