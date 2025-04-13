@@ -14,6 +14,8 @@
                 <th width="5%">#</th>
                 <th>Jenis Laporan</th>
                 <th>Status Submit Laporan</th>
+                <th>Tanggal Upload</th>
+                <th>Batas Akhir</th>
                 <th width="5%">Action</th>
             </x-slot>
         </x-table>
@@ -71,12 +73,31 @@
                     data: 'status_submit_laporan'
                 },
                 {
+                    data: 'tgl_upload',
+                    render: function(data, type, row) {
+                        return data ? formatDate(data) : '-'; // Format the upload date
+                    }
+                },
+                {
+                    data: 'tgl_batas_akhir',
+                    render: function(data, type, row) {
+                        return data ? formatDate(data) : '-'; // Format the due date
+                    }
+                },
+                {
                     data: 'action',
                     searchable: false,
                     orderable: false
                 }
             ]
         });
+
+        // Helper function to format date (e.g., "YYYY-MM-DD" to "DD MMM YYYY")
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            return date.toLocaleDateString('id-ID', options); // Use Indonesian locale
+        }
 
         // Event listener to open modal and fetch data
         $(document).on('click', '.open-modal-btn', function() {
