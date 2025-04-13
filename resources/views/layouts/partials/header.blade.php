@@ -39,7 +39,7 @@
                     <i class="icon-ellipsis"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                    <a class="dropdown-item" href="{{ route('user.show_form_profil') }}">
+                    {{-- <a class="dropdown-item" href="{{ route('user.show_form_profil') }}">
                         <i class="fa-solid fa-user text-primary"></i>
                         Profil
                     </a>
@@ -48,7 +48,7 @@
                             <i class="fa-solid fa-person-walking-arrow-right text-primary"></i>
                             Kembali ke Akun Utama
                         </a>
-                    @endImpersonating
+                    @endImpersonating --}}
                     <a class="dropdown-item" onclick="document.querySelector('.form-logout').submit()">
                         <i class="fa-solid fa-right-from-bracket text-primary"></i>
                         Logout
