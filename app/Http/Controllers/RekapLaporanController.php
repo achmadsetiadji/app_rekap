@@ -16,12 +16,25 @@ class RekapLaporanController extends Controller
    */
   public function index()
   {
+    // Count for statuses
     $tepat_waktu = RekapLaporan::where('status_submit_laporan', 'Tepat Waktu')->count();
     $terkirim = RekapLaporan::where('status_submit_laporan', 'Terkirim')->count();
     $terlambat = RekapLaporan::where('status_submit_laporan', 'Terlambat')->count();
     $tidak_lapor = RekapLaporan::where('status_submit_laporan', 'Tidak Lapor')->count();
 
-    return view('rekap_laporan.index', compact('tepat_waktu', 'terkirim', 'terlambat', 'tidak_lapor'));
+    // Fetch "Hampir Terlambat" records
+    $hampir_terlambat_data = RekapLaporan::where('status_submit_laporan', 'Tidak Lapor') // Only consider "Tidak Lapor"
+      ->whereNotNull('tgl_batas_akhir') // Ensure tgl_batas_akhir is not null
+      ->whereRaw('ABS(DATEDIFF(tgl_batas_akhir, CURDATE())) <= 5') // Difference <= 5 days (absolute value)
+      ->get(); // Get all matching records
+
+    return view('rekap_laporan.index', compact(
+      'tepat_waktu',
+      'terkirim',
+      'terlambat',
+      'tidak_lapor',
+      'hampir_terlambat_data'
+    ));
   }
 
   /**

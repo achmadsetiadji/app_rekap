@@ -7,8 +7,10 @@
             <div class="col pr-lg-2 m-1">
                 <x-card class="text-center bg-success text-white cursor-pointer" data-role="">
                     <div class="d-flex align-items-center justify-content-center">
-                        <strong class="fs-30 mb-2">{{formatUang($tepat_waktu)}}</strong>
-                        <b><p class="d-inline-block ml-2">Tepat Waktu</p></b>
+                        <strong class="fs-30 mb-2">{{ formatUang($tepat_waktu) }}</strong>
+                        <b>
+                            <p class="d-inline-block ml-2">Tepat Waktu</p>
+                        </b>
                     </div>
                 </x-card>
             </div>
@@ -16,8 +18,10 @@
             <div class="col pr-lg-2 m-1">
                 <x-card class="text-center bg-danger text-white cursor-pointer" data-role="">
                     <div class="d-flex align-items-center justify-content-center">
-                        <strong class="fs-30 mb-2">{{formatUang($terlambat)}}</strong>
-                        <b><p class="d-inline-block ml-2">Terlambat</p></b>
+                        <strong class="fs-30 mb-2">{{ formatUang($terlambat) }}</strong>
+                        <b>
+                            <p class="d-inline-block ml-2">Terlambat</p>
+                        </b>
                     </div>
                 </x-card>
             </div>
@@ -25,8 +29,10 @@
             <div class="col pr-lg-2 m-1">
                 <x-card class="text-center bg-orange text-white cursor-pointer" data-role="">
                     <div class="d-flex align-items-center justify-content-center">
-                        <strong class="fs-30 mb-2">{{formatUang($tidak_lapor)}}</strong>
-                        <b><p class="d-inline-block ml-2">Tidak Lapor</p></b>
+                        <strong class="fs-30 mb-2">{{ formatUang($tidak_lapor) }}</strong>
+                        <b>
+                            <p class="d-inline-block ml-2">Tidak Lapor</p>
+                        </b>
                     </div>
                 </x-card>
             </div>
@@ -34,8 +40,10 @@
             <div class="col pr-lg-2 m-1">
                 <x-card class="text-center bg-info text-white cursor-pointer" data-role="">
                     <div class="d-flex align-items-center justify-content-center">
-                        <strong class="fs-30 mb-2">{{formatUang($terkirim)}}</strong>
-                        <b><p class="d-inline-block ml-2">Terkirim</p></b>
+                        <strong class="fs-30 mb-2">{{ formatUang($terkirim) }}</strong>
+                        <b>
+                            <p class="d-inline-block ml-2">Terkirim</p>
+                        </b>
                     </div>
                 </x-card>
             </div>
@@ -55,6 +63,36 @@
             </x-slot>
         </x-table>
     </x-card>
+
+    <!-- Modal Structure -->
+    <div id="hampirTerlambatModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hampir Terlambat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @if ($hampir_terlambat_data->isNotEmpty())
+                        <p>Berikut adalah data yang hampir terlambat:</p>
+                        <ul>
+                            @foreach ($hampir_terlambat_data as $data)
+                                <li>
+                                    {{ $data->nama_ljk }} - {{ $data->jenis_laporan }}
+                                    (Batas Akhir: {{ \Carbon\Carbon::parse($data->tgl_batas_akhir)->format('d F Y') }})
+                                </li>
+                            @endforeach
+                        </ul>
+                    @else
+                        <p>Tidak ada data yang hampir terlambat.</p>
+                    @endif
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('js')
@@ -93,4 +131,13 @@
             ]
         });
     </script>
+
+    @if ($hampir_terlambat_data->isNotEmpty())
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const modal = new bootstrap.Modal(document.getElementById('hampirTerlambatModal'));
+                modal.show();
+            });
+        </script>
+    @endif
 @endpush
