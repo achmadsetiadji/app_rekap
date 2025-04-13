@@ -1,11 +1,12 @@
 <nav class="navbar navbar-danger col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo text-white fw-bold text-decoration-none" style="font-size: 0.9rem; font-weight: bold" href="{{ route('dashboard') }}">
+        <a class="navbar-brand brand-logo text-white fw-bold text-decoration-none"
+            style="font-size: 0.9rem; font-weight: bold" href="{{ route('dashboard') }}">
             Dashboard Monitoring <br>
             Pelaporan BPR/BPRS KOJT
         </a>
         <a class="navbar-brand brand-logo-mini" href="{{ route('dashboard') }}">
-          <img src="{{ asset('images/ojk_logo.png') }}" alt="logo" />
+            <img src="{{ asset('images/ojk_logo.png') }}" alt="logo" />
         </a>
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -49,7 +50,7 @@
                             Kembali ke Akun Utama
                         </a>
                     @endImpersonating --}}
-                    <a class="dropdown-item" onclick="document.querySelector('.form-logout').submit()">
+                    <a class="dropdown-item" onclick="handleLogout()">
                         <i class="fa-solid fa-right-from-bracket text-primary"></i>
                         Logout
                     </a>
@@ -67,3 +68,13 @@
         </button>
     </div>
 </nav>
+
+<script>
+    function handleLogout() {
+        // Clear localStorage
+        localStorage.removeItem('modalShown');
+
+        // Submit the logout form
+        document.querySelector('.form-logout').submit();
+    }
+</script>

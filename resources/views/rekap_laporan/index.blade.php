@@ -88,7 +88,7 @@
                     @else
                         <p>Tidak ada data yang hampir terlambat.</p>
                     @endif
-                </div>                
+                </div>
             </div>
         </div>
     </div>
@@ -98,9 +98,10 @@
     <script>
         let table;
 
+        // Initialize DataTable
         table = $('.table').DataTable({
             processing: true,
-            serverside: true,
+            serverSide: true,
             autoWidth: false,
             ajax: {
                 url: "{{ route('rekap_laporan.data') }}"
@@ -129,14 +130,19 @@
                 },
             ]
         });
-    </script>
 
-    @if ($hampir_terlambat_data->isNotEmpty())
-        <script>
+        // Check if modal should be shown
+        @if ($hampir_terlambat_data->isNotEmpty())
             document.addEventListener("DOMContentLoaded", function() {
+                const modalKey = 'modalShown'; // Key to track modal display
                 const modal = new bootstrap.Modal(document.getElementById('hampirTerlambatModal'));
-                modal.show();
+
+                // Check if modal has already been shown
+                if (!localStorage.getItem(modalKey)) {
+                    modal.show(); // Show the modal
+                    localStorage.setItem(modalKey, 'true'); // Mark modal as shown
+                }
             });
-        </script>
-    @endif
+        @endif
+    </script>
 @endpush
