@@ -10,7 +10,7 @@
     <title>@yield('title')</title>
 
     <!-- Icons -->
-    <link rel="shortcut icon" href="{{ asset('images/logo_linkit.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('skydash/images/ojk_logo.png') }}" />
     <link rel="stylesheet" href="{{ asset('skydash/vendors/feather/feather.css') }}">
     <link rel="stylesheet" href="{{ asset('skydash/vendors/ti-icons/css/themify-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('skydash/vendors/simple-line-icons/css/simple-line-icons.css') }}">

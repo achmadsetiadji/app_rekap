@@ -6,7 +6,7 @@
             Pelaporan BPR/BPRS KOJT
         </a>
         <a class="navbar-brand brand-logo-mini" href="{{ route('dashboard') }}">
-            <img src="{{ asset('images/ojk_logo.png') }}" alt="logo" />
+            <img src="{{ asset('skydash/images/ojk_logo.png') }}" alt="logo" />
         </a>
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">

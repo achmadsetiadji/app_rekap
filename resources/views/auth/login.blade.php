@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/" class="d-flex justify-content-center">
-                <img src="{{ asset('images/ojk_logo.png') }}" style="width: 20%;" class="mx-auto d-block">
+                <img src="{{ asset('skydash/images/ojk_logo.png') }}" style="width: 20%;" class="mx-auto d-block">
             </a>
         </x-slot>
 
